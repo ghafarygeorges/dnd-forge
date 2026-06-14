@@ -6,6 +6,7 @@ import { classFeaturesByLevel } from "./progression";
 import { formatModifier, SPELL_LEVEL_NAMES } from "./rules";
 import { SKILLS } from "./skills";
 import { getBackground, getFeat, getItem, getRace, getSpell, getSubrace } from "@/data";
+import sheetTemplateUrl from "@/assets/5e-character-sheet.pdf?url";
 
 // Fields whose value should be horizontally centered (numeric stat boxes).
 const CENTERED_FIELDS = new Set<string>([
@@ -73,8 +74,7 @@ const SLOT_REMAINING: Record<number, string> = {
 /** Build the filled PDF bytes for a character. */
 export async function buildFilledSheet(character: Character): Promise<Uint8Array> {
   const d = deriveCharacter(character);
-  const url = `${import.meta.env.BASE_URL}5e-character-sheet.pdf`;
-  const templateBytes = await fetch(url).then((r) => {
+  const templateBytes = await fetch(sheetTemplateUrl).then((r) => {
     if (!r.ok) throw new Error(`Could not load PDF template (${r.status})`);
     return r.arrayBuffer();
   });
