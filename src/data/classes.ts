@@ -878,6 +878,18 @@ export const CLASSES: ClassDef[] = [
           { name: "Greater Portent", level: 14, description: "Roll three d20s for your Portent feature." },
         ],
       },
+      {
+        id: "chronurgy",
+        name: "Chronurgy Magic",
+        source: "EGtW",
+        features: [
+          { name: "Chronal Shift", level: 2, description: "Twice per long rest, force a creature you can see within 30 ft to reroll an attack roll, ability check, or saving throw after the roll is made." },
+          { name: "Temporal Awareness", level: 2, description: "Add your Intelligence modifier to your initiative rolls." },
+          { name: "Momentary Stasis", level: 6, description: "As an action, magically imprison a Large or smaller creature within 60 ft in temporal stasis until the end of your next turn unless it succeeds on a Constitution save." },
+          { name: "Arcane Abeyance", level: 10, description: "Condense a spell of 4th level or lower with a casting time of 1 action into a motelike bead that another creature can use to cast the stored spell." },
+          { name: "Convergent Future", level: 14, description: "When a creature you can see makes an attack roll, ability check, or saving throw, you can decide whether it succeeds or fails instead of rolling, gaining one level of exhaustion after using this feature." }
+        ],
+      }
     ],
   },
 
