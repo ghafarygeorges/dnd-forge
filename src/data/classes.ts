@@ -881,7 +881,7 @@ export const CLASSES: ClassDef[] = [
       {
         id: "chronurgy",
         name: "Chronurgy Magic",
-        source: "EGtW",
+        source: "EGW",
         features: [
           { name: "Chronal Shift", level: 2, description: "Twice per long rest, force a creature you can see within 30 ft to reroll an attack roll, ability check, or saving throw after the roll is made." },
           { name: "Temporal Awareness", level: 2, description: "Add your Intelligence modifier to your initiative rolls." },
